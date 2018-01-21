@@ -2,7 +2,7 @@
 
 Please add paper into reference if the repository is helpful to you.
 
-Zhu, Wentao, Chaochun Liu, Wei Fan, and Xiaohui Xie. "DeepLung: 3D Deep Convolutional Nets for Automated Pulmonary Nodule Detection and Classification." arXiv preprint arXiv:1709.05538 (2017).
+Zhu, Wentao, Chaochun Liu, Wei Fan, and Xiaohui Xie. "DeepLung: Deep 3D Dual Path Nets for Automated Pulmonary Nodule Detection and Classification." IEEE WACV, 2018.
 
 Dependecies: Ubuntu 14.04, python 2.7, CUDA 8.0, cudnn 5.1, h5py (2.6.0), SimpleITK (0.10.0), numpy (1.11.3), nvidia-ml-py (7.352.0), matplotlib (2.0.0), scikit-image (0.12.3), scipy (0.18.1), pyparsing (2.1.4), pytorch (0.1.10+ac9245a) (anaconda is recommended)
 
@@ -12,7 +12,7 @@ Download LIDC-IDRI dataset from https://wiki.cancerimagingarchive.net/display/Pu
 
 For preprocessing, run ./DeepLung/prepare.py. The parameters for prepare.py is in config_training.py. *_data_path is the unzip raw data path for LUNA16. *_preprocess_result_path is the save path for the preprocessing. *_annos_path is the path for annotations. *_segment is the path for LUNA16 segmentation, which can be downloaded from LUNA16 website.
 
-Use run_training.sh to train the detector. After training and test are done, use the ./evaluationScript/frocwrtdetpepchluna16.py to validate the epoch used for test. After that, collect all the 10 folds' prediction, use ./evaluationScript/noduleCADEvaluationLUNA16.py to get the FROC for all 10 folds. You can directly run noduleCADEvaluationLUNA16.py, and get the performance in the paper.
+Use run_training.sh to train the detector. You can use the resnet or dual path net model by revising --model attribute. After training and test are done, use the ./evaluationScript/frocwrtdetpepchluna16.py to validate the epoch used for test. After that, collect all the 10 folds' prediction, use ./evaluationScript/noduleCADEvaluationLUNA16.py to get the FROC for all 10 folds. You can directly run noduleCADEvaluationLUNA16.py, and get the performance in the paper.
 
 For nodule classification, first clean the data from LIDC-IDRI. Use the ./data/extclsshpinfo.py to extract nodule labels. humanperformance.py is used to get the performance of doctors. 
 
