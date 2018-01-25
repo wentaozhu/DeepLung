@@ -18,27 +18,47 @@ The trained model is in ./detector/dpnmodel/ or ./detector/resmodel/
 The performances on each fold are
 
 Method	Deep 3D Res18	Deep 3D DPN26
+
 Fold 0	0.8610	      0.8750
+
 Fold 1	0.8538	      0.8783
+
 Fold 2	0.7902      	0.8170
+
 Fold 3	0.7863      	0.7731
+
 Fold 4	0.8795	      0.8850
+
 Fold 5	0.8360  	    0.8095
+
 Fold 6	0.8959  	    0.8649
+
 Fold 7	0.8700      	0.8816
+
 Fold 8	0.8886	      0.8668
+
 Fold 9	0.8041    	  0.8122
 
 The performances on each average false positives in FROC compared with other approaches
+
 Methods         0.125 0.25  0.5 1 2 4 8 FROC
+
 DIAG_ConvNet    0.692 0.771 0.809 0.863 0.895 0.914 0.923 0.838
+
 ZENT            0.661 0.724 0.779 0.831 0.872 0.892 0.915 0.811
+
 Aidence         0.601 0.712 0.783 0.845 0.885 0.908 0.917 0.807
+
 MOT_M5Lv1       0.597 0.670 0.718 0.759 0.788 0.816 0.843 0.742
+
 VisiaCTLung     0.577 0.644 0.697 0.739 0.769 0.788 0.793 0.715
+
 Etrocad         0.250 0.522 0.651 0.752 0.811 0.856 0.887 0.676
+
 Dou et al 2017  0.659 0.745 0.819 0.865 0.906 0.933 0.946 0.839
+
 3D RES          0.662 0.746 0.815 0.864 0.902 0.918 0.932 0.834
+
 3D DPN          0.692 0.769 0.824 0.865 0.893 0.917 0.933 0.842
 
 For nodule classification, first clean the data from LIDC-IDRI. Use the ./data/extclsshpinfo.py to extract nodule labels. humanperformance.py is used to get the performance of doctors. 
