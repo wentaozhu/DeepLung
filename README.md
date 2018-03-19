@@ -50,4 +50,6 @@ For classification using DPN, use the code in main_nodcls.py. Use the testdet2cl
 
 For system's classification, that is classification based on detection. First, use the detection's test script in the run_training.sh to get the detected nodules for training CTs. Use the det2cls.py to train the model. And use the testdet2cls.py to test the trained model. You may revise the code a little bit for different test settings.
 
+Doctor's annotation for each nodule in LIDC-IDRI is in ./nodcls/annotationdetclssgm_doctor.csv
+
 Feel free to ask any questions. Wentao Zhu, wentaozhu1991@gmail.com
