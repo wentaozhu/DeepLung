@@ -440,7 +440,7 @@ def full_prep(train=True, val=True, test=True):
             pool = Pool(10)
             partial_savenpy = partial(savenpy, annos=trainalllabel, filelist=trainfilelist, data_path=train_data_path, prep_folder=train_prep_folder)
             N = len(trainfilelist)
-                savenpy(1)
+            savenpy(1)
             _=pool.map(partial_savenpy, range(N))
             print('end train preprocessing')
         if val:
