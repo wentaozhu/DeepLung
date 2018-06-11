@@ -53,3 +53,6 @@ For system's classification, that is classification based on detection. First, u
 Doctor's annotation for each nodule in LIDC-IDRI is in ./nodcls/annotationdetclssgm_doctor.csv
 
 Feel free to ask any questions. Wentao Zhu, wentaozhu1991@gmail.com
+
+LIDC-IDRI nodule size report downloaded from 
+http://www.via.cornell.edu/lidc/list3.2.csv is in /nodcls/data/list3.2.csv
