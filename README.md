@@ -65,7 +65,7 @@ For nodule classification, first clean the data from LIDC-IDRI. Use the ./data/e
 
 dimcls.py is used to get the classification based on diameter. nodclsgbt.py is used to get the performance based on GBM, nodule diameter and nodule pixel. pthumanperformance.py is used for patient-level diagnosis performance. kappatest.py is used for kappa value calculation in the paper.
 
-For classification using DPN, use the code in main_nodcls.py. Use the testdet2cls.py to test the trained model. You may revise the code a little bit for different test settings.
+For classification using DPN, use the code in main_nodcls.py. You may revise the code a little bit for different test settings.
 
 For system's classification, that is classification based on detection. First, use the detection's test script in the run_training.sh to get the detected nodules for training CTs. Use the det2cls.py to train the model. And use the testdet2cls.py to test the trained model. You may revise the code a little bit for different test settings.
 
